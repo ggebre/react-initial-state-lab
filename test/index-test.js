@@ -21,6 +21,7 @@ describe('<ImageSlider />', () => {
 
   it('render the correct text', () => {
     expect(wrapper.text()).to.equal('I am on slide 0');
+    
   });
 });
 

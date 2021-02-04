@@ -16,12 +16,16 @@ export default class Bomb extends Component{
         this.setState ({
             secondsLeft: val
         }) 
+    } 
+    output(){
+        let message = this.state.secondsLeft != 0 ? this.state.secondsLeft  + " seconds left before I go boom!" : "Boom!"
+        return message
     }
 
     render() {
         return (
                 // {this.decrement()}
-                <h1> {this.state.secondsLeft} seconds left before I go boom!</h1>
+                <h1>{this.output()}</h1>
             
         )
     } 
